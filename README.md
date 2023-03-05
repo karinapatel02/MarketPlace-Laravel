@@ -1,17 +1,20 @@
 # MarketPlace-laravel
 
-Note:
--have php: https://www.ergonis.com/products/tips/install-php-on-macos.php
+## Download php here
+#### For Mac OS
+-php: https://www.ergonis.com/products/tips/install-php-on-macos.php 
 
--remember to check ports
+### For Windows
+-php: https://windows.php.net/download/
 
--db person needs to give access to host(eg. wireless% or whatever)
+### If database hosted on cloud.
+-Needs to give access to host(eg. wireless% or whatever)
 
 To Run application in local:
 
 -Install composer globally
 
--cd marketplace
+-cd filename
 
 -composer install
 
@@ -26,6 +29,8 @@ To Run application in local:
 -npm run dev
 
 -php artisan serve
+
+-remember to check ports
 
 -For Sending mail update local environment file
 MAIL_MAILER=smtp
