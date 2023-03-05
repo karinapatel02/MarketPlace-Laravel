@@ -32,7 +32,8 @@ To Run application in local:
 
 -remember to check ports
 
--For Sending mail update local environment file
+### For Sending mail update local environment file
+
 MAIL_MAILER=smtp
 
 MAIL_HOST=
