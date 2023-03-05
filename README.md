@@ -1,6 +1,6 @@
 # MarketPlace-laravel
 
-### This is a full stack react web application using RESTful APIs that enables users to communicate through a blog and conduct online buying and selling of products.
+### This is a full stack laravel web application using RESTful APIs that enables users to communicate through a blog and conduct online buying and selling of products.
 Created 4 role-based profiles (Student, Business Owner, School Admin, and Super Admin) with specific access control.
 
 
