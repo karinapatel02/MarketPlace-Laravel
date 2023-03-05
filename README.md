@@ -1,7 +1,7 @@
 # MarketPlace-laravel
 
 ## Download php here
-#### For Mac OS
+### For Mac OS
 -php: https://www.ergonis.com/products/tips/install-php-on-macos.php 
 
 ### For Windows
