@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Providers;
+
+use App\Providers\CustomUserProvider;
+use Illuminate\Support\ServiceProvider;
+
+class CustomAuthProvider extends ServiceProvider
+{
+
+    public function boot()
+    {
+        $this->app['auth']->extend('api', function () {
+            return new CustomUserProvider();
+        });
+    }
+
+    public function register()
+    {
+        //
+    }
+}

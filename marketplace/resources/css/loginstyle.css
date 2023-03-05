@@ -1,0 +1,170 @@
+/* Phase 2 for
+**Mav Market**
+As a part of
+CSE 5335-002-WEB DATA MANAGEMENT
+Group 16:
+*Karina Kalpesh Patel - 1001960022*
+*Divya Mahesh Prabhu - 1002024205*
+*Rachana Ramireddy - 1002028071* */
+
+body {
+    background-image: linear-gradient(to top, #7292b6 0%, #daf6f4fa 100%);
+    background-repeat: no-repeat;
+    font-family: Optima, sans-serif;
+    opacity: .95;
+    min-height: 100vh;
+    position: relative;
+}
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}
+
+.row {
+    min-height: 100vh;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.register {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 650px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.login {
+    background-color: #FFFFFF;
+    border-radius: 1.5em;
+    width: 50%;
+    margin: 5em auto;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.title {
+    padding-top: 40px;
+    color: #284562;
+    font-family: Optima, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+input,
+select,
+textarea {
+    width: 75%;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    resize: vertical;
+    background: azure;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+}
+
+.submit,
+.delete {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #284562;
+    color: white;
+    cursor: pointer;
+}
+
+.submit.forpass {
+    /* margin-right: 2em; */
+    color: white;
+}
+
+.submit.reg {
+    margin-left: 2em;
+    color: white;
+}
+
+.submit:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.regsubmit {
+    width: 40%;
+    margin-left: 7em;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #284562;
+    color: white;
+    cursor: pointer;
+}
+
+.forgot>a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #284562;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        min-height: 120vh;
+    }
+}

@@ -1,0 +1,62 @@
+/* Phase 2 for
+**Mav Market**
+As a part of
+CSE 5335-002-WEB DATA MANAGEMENT
+Group 16:
+*Karina Kalpesh Patel - 1001960022*
+*Divya Mahesh Prabhu - 1002024205*
+*Rachana Ramireddy - 1002028071* */
+
+.column-left {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.column-right {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.bargraph {
+    width: 100%;
+}
+
+.bars {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.list {
+    margin-left: 20px;
+    background-color: white;
+    padding: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.itemcolor {
+    height: 10px;
+    width: 10px;
+}
+
+.itemtext {
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .column-left,
+    .column-right {
+        width: 100%;
+        margin-top: 0;
+    }
+}
