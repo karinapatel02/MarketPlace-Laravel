@@ -1,45 +1,54 @@
 # MarketPlace-laravel
 
-Note:
--have php: https://www.ergonis.com/products/tips/install-php-on-macos.php
+This is a full stack laravel web application using RESTful APIs that enables users to communicate through a blog and conduct online buying and selling of products.
+Created 4 role-based profiles (Student, Business Owner, School Admin, and Super Admin) with specific access control.
 
--remember to check ports
 
--db person needs to give access to host(eg. wireless% or whatever)
+## Install Laravel here
+https://laravel.com/docs/4.2
+
+## Download php here
+### For Mac OS
+php: https://www.ergonis.com/products/tips/install-php-on-macos.php 
+
+### For Windows
+php: https://windows.php.net/download/
+
+### If database hosted on cloud.
+Needs to give access to host(eg. wireless% or whatever)
 
 To Run application in local:
 
--Install composer globally
+Install composer globally
 
--cd marketplace
+cd filename
 
--composer install
+composer install
 
--npm install
+npm install
 
--composer require php-open-source-saver/jwt-auth
+composer require php-open-source-saver/jwt-auth
 
--php artisan jwt:secret
+php artisan jwt:secret
 
--This will update our .env file with a jwt secret.
+This will update our .env file with a jwt secret.
 
--npm run dev
+npm run dev
 
--php artisan serve
+php artisan serve
 
--For Sending mail update local environment file
-MAIL_MAILER=smtp
+remember to check ports
 
-MAIL_HOST=
+#### You need to add your database credentials as well as Mail credentials, and hosted link for the blog.
 
-MAIL_PORT=465
+#### If you get 500 | Server Error  you can try this
 
-MAIL_USERNAME=
+composer install 
+mv .env.example .env 
+php artisan cache:clear 
+composer dump-autoload 
+php artisan key:generate
 
-MAIL_PASSWORD=
 
-MAIL_ENCRYPTION=ssl
-
-MAIL_FROM_ADDRESS=
-
-MAIL_FROM_NAME="${APP_NAME}"
+##### Other Contributors to the project
+rachanamaria, Divya6696
